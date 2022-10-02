@@ -1,7 +1,7 @@
 <html>
 	<head>
         <!-- for gitbook -->
-        <title>Week 1 - Deep Learning @ Opencampus.sh</title>
+        <title>Image Processing Lab</title>
         <meta charset="UTF-8">
         <meta name="description" content="Introduction to the Opencampus and to the Course contents.">
         <meta name="keywords" content="Deep Learning, Opencampus, Introduction">
@@ -12,8 +12,9 @@
         <!-- until here -->
             <base target="_blank">
         <link rel="stylesheet" href="css/reveal.css">
-        <link rel="stylesheet" href="css/theme/beige.css">
-        <link rel="stylesheet" href="css/s.css">
+        <link rel="stylesheet" href="css/theme/sky.css">
+        <link rel="stylesheet" href="css/unive.css">
+        <!-- <link rel="stylesheet" href="css/s.css"> -->
         <script>
             var link = document.createElement( 'link' );
             link.rel = 'stylesheet';
@@ -27,60 +28,238 @@
 			<div class="slides">
 				<!-- WELCOME -->
 				<section>
-                    Welcome to the
-                    <h2>Advanced Computer Vision</h1>Laboratory
-                    <br><br>
+          Welcome to the
+          <h2>Advanced Computer Vision</h1>Laboratory
+          <br><br>
 					<h3>Ca' Foscari University</h3>
 				</section>
 
 				<!-- Introduction -->
 				<section>
 					<section>
-						I am Luca
-
+						<p class="s-title">Lab Sessions</p>
+						<ul>
+							<li>Practical work (computer needed)</li>
+							<li>Interaction (not only frontal lecture)</li>
+							<li>Group work (changing groups)</li>
+						</ul>
+					</section>
+					<section>
+						<p class="s-title">About me</p>
+						<ul>
+							<li>Researcher at DAIS for Computer Vision and 3D Reconstruction</li>
+							<li>Reach out via mail or come to the Zeta building</li>
+							<li>Passionate about open source software</li>
+						</ul>
+					</section>
+					<section>
+						<p class="s-title">Open Source Software (OSS)</p>
+							<a href="https://www.youtube.com/watch?v=Ag1AKIl_2GM">Talk from R. Stallman</a>
 					</section>
 				</section>
+
+				<!-- REPAIR -->
+				<section>
+					<section>
+						<p class="s-title">The RePAIR Project</p>
+						<ol>
+							<li>Reconstruct accurate 3D model of broken frescoes</li>
+							<li>Develop algorithms to virtually align the broken pieces to solve the puzzle</li>
+							<li>Build and configure a robotic arm to assemble the broken parts</li>
+						</ol>
+					</section>
+					<section>
+						<p class="s-title">3D Reconstruction</p>
+						<p>The reconstruction is done using both a camera and a 3D scanner.<br>
+							Each one has advantages and limitations.
+						</p>
+					</section>
+					<section>
+						<p class="s-title">3D Scanner</p>
+						img
+					</section>
+					<section>
+						<p class="s-title">Camera</p>
+						img
+					</section>
+				</section>
+
+				<!-- TOOLS -->
+				<section>
+					<p class="s-title">Tools for the course</p>
+					<table>
+					 <tr>
+						 <th>Software</th>
+						 <th>Task</th>
+						 <th>Link</th>
+					 </tr>
+					 <tr>
+						 <td>GIMP</td>
+						 <td>Generic Image Processing</td>
+						 <td><a href="https://www.gimp.org/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Fiji</td>
+						 <td>Scientific Image Processing</td>
+						 <td><a href="https://imagej.net/software/fiji/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Photopea</td>
+						 <td>Image Processing and Editing</td>
+						  <td><a href="https://www.photopea.com/">web-based</a></td>
+					 </tr>
+					 <tr>
+						 <td>Meshroom</td>
+						 <td>3D Reconstruction</td>
+						 <td><a href="https://alicevision.org/#meshroom">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Meshlab</td>
+						 <td>3D Processing</td>
+						 <td><a href="https://www.meshlab.net/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Blender</td>
+						 <td>3D Modelling and Rendering</td>
+						 <td><a href="https://www.blender.org/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Postgres</td>
+						 <td>Advanced Database</td>
+						 <td><a href="https://www.postgresql.org/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>QGIS</td>
+						 <td>Geographic Information System</td>
+						 <td><a href="https://www.qgis.org/en/site/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>QField</td>
+						 <td>Mobile tool for QGIS</td>
+						 <td><a href="https://qfield.org/">install</a></td>
+					 </tr>
+					 <tr>
+						 <td>Teachable Machine</td>
+						 <td>AI-based framework for experiments</td>
+						 <td><a href="https://teachablemachine.withgoogle.com/train">web-based</a></td>
+					 </tr>
+					</table>
+				</section>
+
+
 				<!-- compression block -->
-                <section>
+        <section>
 					<section>
-						<p class="slidetitle">Compression</p>
-						<p>what is it?</p>
+						<p class="s-title">Compression</p>
+						<p>what does it mean?</p>
 					</section>
 					<section>
-						lossless vs lossy
+						<p class="s-title">Quick check</p>
+						<ol>
+							<li>is compression lossless?</li>
+							<li>what is the resolution of an image?</li>
+						</ol>
 					</section>
 					<section>
-						when do we need it
+						<p class="s-title">The practical side</p>
+						<ol>
+							<li>can you make an example when compression is useful? and useless?</li>
+							<li>how can you compress an image?</li>
+						</ol>
 					</section>
 					<section>
-						example (links)
+						<p class="s-title">An example</p>
+						<table class="center">
+							<tr>
+								<td><img src='imgs/compression/mountain/input_image.jpg' width=95%/></td>
+								<td><img src='imgs/compression/mountain/jpeg_30.jpg' width=100%/></td>
+							</tr>
+							<tr class="fragment">
+								<td> <p class="center large">size: 17.0 MB</p> </td>
+								<td> <p class="center large">size: 1.7 MB</p> </td>
+							</tr>
+						</table>
 					</section>
 					<section>
-						how to do it?
+						<p class="s-title">Another example</p>
+						<table class="center">
+							<tr>
+								<td><img src='imgs/compression/mascareta/jpeg_30.JPG' width=100%/></td>
+								<td><img src='imgs/compression/mascareta/original.JPG' width=95%/></td>
+							</tr>
+							<tr class="fragment">
+								<td> <p class="center large">size: 1.0 MB</p> </td>
+								<td> <p class="center large">size: 13.0 MB</p> </td>
+							</tr>
+						</table>
 					</section>
 					<section>
-						how to choose size/ratio?
-						exercise 
+						<p class="s-title">Exercise</p>
+						<ol>
+							<li>We divide in 3/4 groups, download software (GIMP) and images</li>
+							<li>Each group compress the images at their best</li>
+							<li>Images are shown with the original one for a test</li>
+							<li>The group whose images are smaller (in size) wins</li>
+						</ol>
 					</section>
-                </section>
+
+        </section>
+
+
 
 				<!-- stitching block -->
 				<section>
 					<section>
-						<p class="slidetitle">Image Stitching</p>
-						<p>application</p>
+						<p class="s-title">Image Alignment</p>
+						<img src='imgs/alignment/Pano_basic_serasmo.jpg'>
 					</section>
 					<section>
-						what is the limit / what is important 
+						<p class="s-title">How does alignment work?</p>
+
 					</section>
 					<section>
-						collage vs spherical 
+						<p class="s-title">Do we have different types of alignment?</p>
+						collage vs spherical
 					</section>
 					<section>
-						dataset and exercise
+						<p class="s-title">Alignment in practice</p>
+						<ul>
+							<li>Enough overlapping and feature</li>
+							<li>Same condition on capturing</li>
+						</ul>
 					</section>
-                    
-                </section>
+					<section>
+						<p class='s-title'>Exercise</p>
+						<ol>
+							<li>We divide in 3/4 groups, download the images</li>
+							<li>Each group tries to align the images at their best</li>
+							<li>Challenge 1: what is the minimum number of images to obtain full picture?</li>
+							<li>Challenge 2: what is the best number of images?</li>
+						</ol>
+					</section>
+        </section>
+
+				<!-- FRIDAY -->
+				<section>
+					<section>
+						<p class="s-title">3D Reconstruction</p>
+						<p>How can 3D data be stored?</p>
+						<p class="fragment">
+							<img src="imgs/3D/3d_data_format_.jpg" />
+						</p>
+					</section>
+					<section>
+						<p class="s-title">Compression for 3D data?</p>
+					</section>
+					<section>
+						<p class="s-title">For Friday</p>
+						<p>We will work on 3D Reconstruction</p>
+						<p>Please install Meshroom</p>
+					</section>
+
+				</section>
+
+
 			</div>
 		</div>
 		<script src="js/reveal.js"></script>
