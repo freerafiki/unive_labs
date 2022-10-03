@@ -1,0 +1,116 @@
+<html>
+	<head>
+        <!-- for gitbook -->
+        <title>Image Processing Lab</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Introduction to the Opencampus and to the Course contents.">
+        <meta name="keywords" content="Deep Learning, Opencampus, Introduction">
+        <meta name="author" content="Luca Palmieri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../res/icon/dl-icon.png">
+        <meta property="og:image" content="../res/icon/dl-icon.png">
+        <!-- until here -->
+            <base target="_blank">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css">
+        <link rel="stylesheet" href="css/unive.css">
+        <!-- <link rel="stylesheet" href="css/s.css"> -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- WELCOME -->
+				<section>
+                    Welcome to the
+                    <h2>Advanced Computer Vision</h1>Laboratory
+                    <br><br>
+                    <h3>Ca' Foscari University</h3>
+                </section>
+
+
+				<!-- REPAIR -->
+				<section>
+					<section>
+						<p class="s-title">The RePAIR Project</p>
+						<ol>
+							<li>Reconstruct accurate 3D model of broken frescoes</li>
+							<li>Develop algorithms to virtually align the broken pieces to solve the puzzle</li>
+							<li>Build and configure a robotic arm to assemble the broken parts</li>
+						</ol>
+					</section>
+					<section>
+						<p class="s-title">3D Reconstruction</p>
+						<p>The reconstruction is done using both a camera and a 3D scanner.<br>
+							Each one has advantages and limitations.
+						</p>
+					</section>
+					<section>
+						<p class="s-title">3D Scanner</p>
+						<img src="imgs/3D/3d_scanner.jpg">
+					</section>
+					<section>
+						<p class="s-title">Raw Data</p>
+						<table>
+							<tr>
+								<td><img src="imgs/3D/front_raw.png"></td>
+								<td><img src="imgs/3D/back_raw.png"></td>
+							</tr>
+							<tr>
+								<td><img src="imgs/3D/front_raw_back.png"></td>
+								<td><img src="imgs/3D/back_raw_back.png"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Processed Data</p>
+						<table>
+							<tr>
+								<td><img src="imgs/3D/0001.png"></td>
+								<td><img src="imgs/3D/0040.png"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Camera</p>
+						img
+					</section>
+				</section>
+
+				
+
+				<!-- FRIDAY -->
+				<section>
+					<section>
+						<p class="s-title">3D Reconstruction</p>
+						<p>How can 3D data be stored?</p>
+						<p class="fragment">
+							<img src="imgs/3D/3d_data_format_.jpg" />
+						</p>
+					</section>
+					<section>
+						<p class="s-title">Compression for 3D data?</p>
+					</section>
+					<section>
+						<p class="s-title">For Friday</p>
+						<p>We will work on 3D Reconstruction</p>
+						<p>Please install Meshroom</p>
+					</section>
+
+				</section>
+
+
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>

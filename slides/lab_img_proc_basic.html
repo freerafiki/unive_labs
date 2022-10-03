@@ -28,9 +28,9 @@
 			<div class="slides">
 				<!-- WELCOME -->
 				<section>
-          Welcome to the
-          <h2>Advanced Computer Vision</h1>Laboratory
-          <br><br>
+					Welcome to the
+					<h2>Advanced Computer Vision</h1>Laboratory
+					<br><br>
 					<h3>Ca' Foscari University</h3>
 				</section>
 
@@ -54,41 +54,16 @@
 					</section>
 					<section>
 						<p class="s-title">Open Source Software (OSS)</p>
-							<a href="https://www.youtube.com/watch?v=Ag1AKIl_2GM">Talk from R. Stallman</a>
-					</section>
-				</section>
-
-				<!-- REPAIR -->
-				<section>
-					<section>
-						<p class="s-title">The RePAIR Project</p>
-						<ol>
-							<li>Reconstruct accurate 3D model of broken frescoes</li>
-							<li>Develop algorithms to virtually align the broken pieces to solve the puzzle</li>
-							<li>Build and configure a robotic arm to assemble the broken parts</li>
-						</ol>
-					</section>
-					<section>
-						<p class="s-title">3D Reconstruction</p>
-						<p>The reconstruction is done using both a camera and a 3D scanner.<br>
-							Each one has advantages and limitations.
-						</p>
-					</section>
-					<section>
-						<p class="s-title">3D Scanner</p>
-						img
-					</section>
-					<section>
-						<p class="s-title">Camera</p>
-						img
+						<p>Using open source guarantee freedom of choice and possible customization and empowers community efforts.</p>
+						<a href="https://www.youtube.com/watch?v=Ag1AKIl_2GM">Talk from R. Stallman</a>
 					</section>
 				</section>
 
 				<!-- TOOLS -->
 				<section>
 					<p class="s-title">Tools for the course</p>
-					<table>
-					 <tr>
+					<table class="medium">
+					 <tr class="large">
 						 <th>Software</th>
 						 <th>Task</th>
 						 <th>Link</th>
@@ -148,7 +123,7 @@
 
 
 				<!-- compression block -->
-        <section>
+        		<section>
 					<section>
 						<p class="s-title">Compression</p>
 						<p>what does it mean?</p>
@@ -194,6 +169,10 @@
 						</table>
 					</section>
 					<section>
+						<p class="s-title">Compression with GIMP</p>
+						<img src="imgs/compression/gimp.png">
+					</section>
+					<section>
 						<p class="s-title">Exercise</p>
 						<ol>
 							<li>We divide in 3/4 groups, download software (GIMP) and images</li>
@@ -203,7 +182,7 @@
 						</ol>
 					</section>
 
-        </section>
+        		</section>
 
 
 
@@ -215,18 +194,37 @@
 					</section>
 					<section>
 						<p class="s-title">How does alignment work?</p>
-
+						<div class="fragment">
+							<img src='imgs/alignment/example_alignment.jpg'>
+						</div>
 					</section>
 					<section>
 						<p class="s-title">Do we have different types of alignment?</p>
-						collage vs spherical
+						<table class="center fragment">
+							<tr>
+								<td><img src='imgs/alignment/collage.jpg' width=100%/></td>
+								<td><img src='imgs/alignment/spherical.jpg' width=95%/></td>
+							</tr>
+							<tr class="">
+								<td> <p class="center large">collage</p> </td>
+								<td> <p class="center large">spherical</p> </td>
+							</tr>
+						</table>
 					</section>
 					<section>
 						<p class="s-title">Alignment in practice</p>
 						<ul>
-							<li>Enough overlapping and feature</li>
+							<li>Enough overlapping and features</li>
 							<li>Same condition on capturing</li>
 						</ul>
+					</section>
+					<section>
+						<p class="s-title">Alignment with Photopea</p>
+						<img src="imgs/alignment/photopea.png">
+					</section>
+					<section>
+						<p class="s-title">Alignment with ImageJ (Fiji)</p>
+						<img src="imgs/alignment/fiji.png">
 					</section>
 					<section>
 						<p class='s-title'>Exercise</p>
@@ -237,7 +235,11 @@
 							<li>Challenge 2: what is the best number of images?</li>
 						</ol>
 					</section>
-        </section>
+        		</section>
+
+				<section>
+					
+				</section>
 
 				<!-- FRIDAY -->
 				<section>
@@ -256,7 +258,6 @@
 						<p>We will work on 3D Reconstruction</p>
 						<p>Please install Meshroom</p>
 					</section>
-
 				</section>
 
 
