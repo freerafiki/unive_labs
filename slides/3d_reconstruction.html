@@ -29,7 +29,7 @@
 				<!-- WELCOME -->
 				<section>
                     Welcome to the
-                    <h2>Advanced Computer Vision</h1>Laboratory
+                    <h2>ADVANCED COMPUTER SCIENCE APPLICATIONS FOR CULTURAL HERITAGE</h1>Laboratory
                     <br><br>
                     <h3>Ca' Foscari University</h3>
                 </section>
@@ -39,6 +39,10 @@
 				<section>
 					<section>
 						<p class="s-title">The RePAIR Project</p>
+						<img src="https://github.com/RePAIRProject/.github/raw/master/profile/rp_cover_gh.jpg">
+					</section>
+					<section>
+						<p class="s-title">Objectives</p>
 						<ol>
 							<li>Reconstruct accurate 3D model of broken frescoes</li>
 							<li>Develop algorithms to virtually align the broken pieces to solve the puzzle</li>
@@ -47,23 +51,50 @@
 					</section>
 					<section>
 						<p class="s-title">3D Reconstruction</p>
-						<p>The reconstruction is done using both a camera and a 3D scanner.<br>
-							Each one has advantages and limitations.
-						</p>
+						<table>
+							<tr>
+								<td width="50%"><img src="https://www.polyga.com/wp-content/uploads/h3-angled.png"></td>
+								<td width="50%"><img src="imgs/3D/sonyalpha7c.png"></td>
+							</tr>
+							<tr class="center">
+								<td class="medium center">Polyga H3 Scanner</td>
+								<td class="medium center">Sony Alpha 7c Camera</td>
+							</tr>
+						</table>
 					</section>
 					<section>
-						<p class="s-title">3D Scanner</p>
+						<p>Questions?</p>
+						<ul>
+							<li>Is it possible to scan the complete surface of an object without moving it?</li>
+							<li>What are the advantages of having a scanner (or a camera)? Which one would you choose?</li>
+						</ul>
+					</section>
+					<section>
+						<p class="s-title">3D Scanning</p>
 						<img src="imgs/3D/3d_scanner.jpg">
 					</section>
 					<section>
-						<p class="s-title">Raw Data</p>
+						<p class="s-title">Raw Data: Top Part</p>
 						<table>
 							<tr>
-								<td><img src="imgs/3D/front_raw.png"></td>
-								<td><img src="imgs/3D/back_raw.png"></td>
+								<th  class="center">Front view</th>
+								<th class="center">Back view</ht>
 							</tr>
 							<tr>
+								<td><img src="imgs/3D/front_raw.png"></td>
 								<td><img src="imgs/3D/front_raw_back.png"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Raw Data: Bottom Part</p>
+						<table>
+							<th>
+								<td>Front view</td>
+								<td>Back view</td>
+							</th>
+							<tr>
+								<td><img src="imgs/3D/back_raw.png"></td>
 								<td><img src="imgs/3D/back_raw_back.png"></td>
 							</tr>
 						</table>
@@ -78,33 +109,80 @@
 						</table>
 					</section>
 					<section>
-						<p class="s-title">Camera</p>
+						<p class="s-title">Scanning with a camera</p>
 						img
+					</section>
+					<section>
+						<p class="s-title">Input Video</p>
+						<video controls>
+							<source src="imgs/3D/scan_10.mp4">
+						</video>
 					</section>
 				</section>
 
 				
 
-				<!-- FRIDAY -->
+				<!-- 3D DATA -->
 				<section>
 					<section>
-						<p class="s-title">3D Reconstruction</p>
-						<p>How can 3D data be stored?</p>
+						<p class="s-title">3D Data</p>
+						<p>What kind of format is used for 3D data?</p>
 						<p class="fragment">
 							<img src="imgs/3D/3d_data_format_.jpg" />
 						</p>
 					</section>
 					<section>
-						<p class="s-title">Compression for 3D data?</p>
+						<p class="s-title">Point Clouds</p>
 					</section>
 					<section>
-						<p class="s-title">For Friday</p>
-						<p>We will work on 3D Reconstruction</p>
-						<p>Please install Meshroom</p>
+						<p class="s-title">Compression for 3D data?</p>
 					</section>
-
 				</section>
 
+				<section>
+					<p class="s-title">Road to our 3D scene</p>
+					<table class="large">
+						<tr class="bold">
+							<td>Step </td>
+							<td>Task</td>
+							<td>Tool</td>
+						</tr>
+						<tr>
+							<td>Acquisition </td>
+							<td>capturing images</td>
+							<td>Camera or Phone</td>
+						</tr>
+						<tr>
+							<td>3D Reconstruction </td>
+							<td>estimating 3D geometry from images</td>
+							<td>Meshroom</td>
+						</tr>
+						<tr>
+							<td>3D Scene Modelling</td>
+							<td>preparing the scene and refining objects</td>
+							<td>Blender</td>
+						</tr>
+						<tr>
+							<td>3D Scene Compression</td>
+							<td>scaling down the scene for usage</td>
+							<td>Meshlab</td>
+						</tr>
+					</table>
+				</section>
+
+				<!-- ACQUISITION -->
+				<section>
+					<section>
+						<p class="s-title">Acquisition</p>
+					</section>
+				</section>
+
+				<!-- 3D RECONSTRUCTION -->
+				<section>
+					<section>
+						<p class="s-title">3D Reconstruction</p>
+					</section>
+				</section>
 
 			</div>
 		</div>
