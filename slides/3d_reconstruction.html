@@ -89,10 +89,10 @@
 					<section>
 						<p class="s-title">Raw Data: Bottom Part</p>
 						<table>
-							<th>
-								<td>Front view</td>
-								<td>Back view</td>
-							</th>
+							<tr>
+								<th  class="center">Front view</th>
+								<th class="center">Back view</ht>
+							</tr>
 							<tr>
 								<td><img src="imgs/3D/back_raw.png"></td>
 								<td><img src="imgs/3D/back_raw_back.png"></td>
@@ -110,13 +110,26 @@
 					</section>
 					<section>
 						<p class="s-title">Scanning with a camera</p>
-						img
+						<img src="imgs/3D/scanning_3d.jpg">
 					</section>
 					<section>
 						<p class="s-title">Input Video</p>
 						<video controls>
 							<source src="imgs/3D/scan_10.mp4">
 						</video>
+					</section>
+					<section>
+						<p class="s-title">Input Images</p>
+						<table>
+							<tr>
+								<td><img src="imgs/3D/scan_cam/DSC05869.JPG"></td>
+								<td><img src="imgs/3D/scan_cam/DSC05898.JPG"></td>
+								<td><img src="imgs/3D/scan_cam/DSC05927.JPG"></td>
+								<td><img src="imgs/3D/scan_cam/DSC05956.JPG"></td>
+								<td><img src="imgs/3D/scan_cam/DSC05985.JPG"></td>
+							</tr>
+						</table>
+						<img src="imgs/3D/mesh_194.png">
 					</section>
 				</section>
 
@@ -133,6 +146,11 @@
 					</section>
 					<section>
 						<p class="s-title">Point Clouds</p>
+						<img src="imgs/3D/pcd04.png">
+					</section>
+					<section>
+						<p class="s-title">Meshes</p>
+						<img src="imgs/3D/mesh03.png">
 					</section>
 					<section>
 						<p class="s-title">Compression for 3D data?</p>
@@ -174,7 +192,18 @@
 				<section>
 					<section>
 						<p class="s-title">Acquisition</p>
+
 					</section>
+					<section>
+						<p class="s-title">Capturing the scene</p>
+						<ul>
+							<li>Trying to capture the object or the scene from every perspective.</li>
+							<li>Ensure simultaneously enough overlapping and difference between images.</li>
+							<li>Try to have similar light conditions across pictures.</li>
+							<li>Around 50 picture can be a good standard.</li>
+						</ul>
+					</section>
+
 				</section>
 
 				<!-- 3D RECONSTRUCTION -->
@@ -182,8 +211,39 @@
 					<section>
 						<p class="s-title">3D Reconstruction</p>
 					</section>
+					<section>
+						<p class="s-title">Meshroom</p>
+						<img src="imgs/3D/meshroom.png">
+					</section>
+					<section>
+						<p class="s-title">Example Workflow</p>
+						<img src="imgs/3D/meshroom_monster.png">
+					</section>
+					<section>
+						<p class="s-title">Results</p>
+						<table>
+							<tr>
+								<td><img src="imgs/3D/only_cpu.png"></td>
+								<td><img src="imgs/3D/with_gpu.png"></td>
+							</tr>
+						</table>
+					</section>
+
+
 				</section>
 
+
+				<!-- FOR NEXT TIME -->
+				<section>
+					<section>
+						<p class="s-title">For the next time</p>
+						<ul>
+							<li>choose one object and one scene</li>
+							<li>install Blender for 3D modelling</li>
+							<li>create an account on Sketchfab</li>
+						</ul>
+					</section>
+				</section>
 			</div>
 		</div>
 		<script src="js/reveal.js"></script>
