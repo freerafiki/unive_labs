@@ -1,0 +1,274 @@
+<html>
+	<head>
+        <!-- for gitbook -->
+        <title>3D Scene Modelling Lab</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="3D Modelling with Blender and Meshlab">
+        <meta name="keywords" content="3D scene, blender, meshlab, open source">
+        <meta name="author" content="Luca Palmieri">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="../res/icon/dl-icon.png">
+        <meta property="og:image" content="../res/icon/dl-icon.png">
+        <!-- until here -->
+            <base target="_blank">
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/sky.css">
+        <link rel="stylesheet" href="css/unive.css">
+        <!-- <link rel="stylesheet" href="css/s.css"> -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- WELCOME -->
+				<section>
+                    Welcome to the
+                    <h2>ADVANCED COMPUTER SCIENCE APPLICATIONS FOR CULTURAL HERITAGE</h1>Laboratory
+                    <br><br>
+                    <h3>Ca' Foscari University</h3>
+                </section>
+
+
+				
+				<!-- 3D DATA -->
+				<section>
+					<section>
+						<p class="s-title">3D Data</p>
+						<p>What are the different 3D formats</p>
+					</section>
+					<section>
+						<table class="large">
+							<tr class="bold">
+								<td>Format </td>
+								<td>Access</td>
+								<td>Characteristics</td>
+							</tr>
+							<tr>
+								<td>.STL</td>
+								<td>open</td>
+								<td>only triangle meshes, no colors</td>
+							</tr>
+							<tr>
+								<td>.PLY</td>
+								<td>open</td>
+								<td>only points, color but no texture</td>
+							</tr>
+							<tr>
+								<td>.OBJ</td>
+								<td>open</td>
+								<td>mesh + materials + texture</td>
+							</tr>
+							<tr>
+								<td>.FBX</td>
+								<td>closed</td>
+								<td>from AutoCad/Maya/Fusion 360</td>
+							</tr>
+							<tr>
+								<td>.BLEND</td>
+								<td>open</td>
+								<td>specific for Blender full scenes</td>
+							</tr>
+							<tr>
+								<td>.GLTF</td>
+								<td>open</td>
+								<td>3d scene + animations</td>
+							</tr>
+							<tr>
+								<td>.USDZ</td>
+								<td>closed</td>
+								<td>from Apple and Pixar for AR and VR</td>
+							</tr>
+							<tr>
+								<td>more</td>
+								<td>..</td>
+								<td>.CAD, .3DS, .GLB, .X3D and more</td>
+							</tr>
+						</table>
+					</section>	
+				</section>
+
+				<!-- MESHLAB -->
+				<section>
+					<section>
+						<p class="s-title">Meshlab</p>
+					</section>
+					<section>
+						<p class="s-title">Visualizing Points and Triangles</p>
+						<img src="imgs/3D/meshlab_vis.jpg">
+					</section>
+					<section>
+						<p class="s-title">Simplification</p>
+						<img src="imgs/3D/simplification.jpg">
+					</section>
+				</section>
+
+				<!-- SKETCHFAB -->
+				<section>
+					<section>
+						<p class="s-title">3D Scene</p>
+						<p>Composition of 3D assets</p>
+					</section>
+					<section>
+						<p class="s-title">3D Assets</p>
+						<p>Scanning multiple objects</p>
+						<p>Most of the assets can be found online</p>
+					</section>
+					<section>
+						<p class="s-title">3D models</p>
+						<img src="imgs/3D/sketchfab.jpg">
+					</section>
+					<section>
+						<p class="s-title">Downloading</p>
+						<img src="imgs/3D/sketchfab.jpg">
+					</section>
+				</section>
+
+				<!-- BLENDER -->
+				<section>
+					<section>
+						<p class="s-title">Blender</p>
+						<p>3D software for modelling, rendering and animating a scene</p>
+					</section>
+					<section>
+						<p class="s-title">Interface</p>
+						<img src="imgs/blender/blender.jpg">
+					</section>
+					<section>
+						<p class="s-title">Camera and Lights</p>
+						<img src="imgs/blender/camera_light.jpg">
+					</section>
+					<section>
+						<p class="s-title">Importing</p>
+						<img width=500px src="imgs/blender/import.jpg">
+					</section>
+					<section>
+						<p class="s-title"><a href="https://github.com/sketchfab/blender-plugin/releases/tag/1.5.0">Sketchfab Add-on</a></p>
+						<img width=150px src="imgs/blender/import_sketchfab.jpg">
+					</section>
+					<section>
+						<p class="s-title">Blender Cheat-Sheet</p>
+						<table class="">
+							<tr>
+								<th>Action</th>
+								<th>Key Shortcut</th>
+							</tr>
+							<tr>
+								<td>Move an object</td>
+								<td>G (+X/Y/Z for axis)</td>
+							</tr>
+							<tr>
+								<td>Scale an object</td>
+								<td>S (+X/Y/Z for axis)</td>
+							</tr>
+							<tr>
+								<td>Shift to Camera</td>
+								<td>Ctrl + 0 (numpad zero)</td>
+							</tr>
+							<tr>
+								<td>Align view perspective to an axis</td>
+								<td>1, 3, 5, 7 (numpad)</td>
+							</tr>
+							<tr>
+								<td>Rotate view perspective of 90 degrees</td>
+								<td>2, 4, 6, 8 (numpad)</td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Exporting</p>
+						<img width=500px src="imgs/blender/export.jpg">
+					</section>
+				</section>
+
+				<!-- Visualization -->
+				<section>
+					<section>
+						<p class="s-title">Visualization of 3D scenes</p>
+						<p>What can we do with a 3D scene, if screens are only 2D?</p>
+					</section>
+					<section>
+						<ul>
+							<li>3D model viewer</li>
+							<li>Virtual/Augmented Reality</li>
+							<li>2D renderings with different conditions</li>
+							<li>Animation of the 3D scene (moving objects or camera)</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- 3d model viewer app -->
+				<section>
+					<section>
+						<p class="s-title">3D Model Viewer</p>
+						<table>
+							<tr>
+								<th>Android App</th>
+								<th>iOS App</th>
+							</tr>
+							<tr>
+								<td><a href="https://play.google.com/store/apps/details?id=net.mcmiracom.modelviewer&gl=US"><img src="https://play-lh.googleusercontent.com/zqds3bJqeNeez8wPq_a4oMe9X6iuAmnQWekFhqv9y6DkkY5FWg5pk8wEuNUCeQ0sNkw=w240-h480"></a></td>
+								<td><a href="https://apps.apple.com/us/app/3d-model-viewer-ar-view/id1105242878"><img src="https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/8c/76/14/8c761482-bccf-1583-5e46-113ba05e7fef/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.webp"></a></td>								
+							</tr>
+						</table>
+					</section>
+				</section>
+
+				<!-- VR / AR -->
+				<section>
+					<section>
+						<p class="s-title">Virtual or Augmented Reality</p>
+						<p>What is the difference?</p>
+					</section>
+					<section>
+						cardboard, sketchfab, reality hacker
+					</section>
+				</section>
+
+				<!-- 2d rendering  -->
+				<section>
+					<section>
+						<p class="s-title">2D Rendering from a 3D Model</p>
+						<p></p>
+					</section>
+					<section>
+						light, camera, objects, materials
+					</section>
+				</section>
+
+				<!-- animations  -->
+				<section>
+					<section>
+						<p class="s-title">Rendering Animations</p>
+						<p></p>
+					</section>
+					<section>
+						timeline, interpolation
+					</section>
+				</section>
+
+
+				<!-- FOR NEXT TIME -->
+				<section>
+					<section>
+						<p class="s-title">For the next time</p>
+						<ul>
+							<li>install <a href="https://www.blender.org/">Blender</a> for 3D modelling</li>
+							<li>create an account on <a href="https://sketchfab.com">Sketchfab</a></li>
+							<li>choose one object and one scene, either yours or from sketchfab</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+		<script src="js/reveal.js"></script>
+		<script>
+			Reveal.initialize();
+		</script>
+	</body>
+</html>
