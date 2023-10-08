@@ -26,9 +26,6 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-
-
-
 				<!-- WELCOME -->
 				<section>
 					Welcome to the
@@ -37,6 +34,24 @@
 					<br><br>
 					<h3>Ca' Foscari University</h3>
 				</section>
+
+				<section>
+					<section>
+						<p class="s-title">Extra: Veneto Night 2023</p>
+						<img src="imgs/venetonight23/vn.jpg"/>
+						<p>We presented some of the projects from last year at Veneto Night last week!</p>
+					</section>
+					<section>
+						<p class="s-title">Projects</p>
+						<ul>
+							<li>3D reconstruction of Lion heads placed on the door frame of Palazzo Ducale (3D)</li>
+							<li>Inside the Roman settlements (GIS)</li>
+							<li>A tour of a 21st cenutury museum (3D + VR)</li>
+							<li>The Russo-Ukrainian War and its effects on Ukraine's Cultural Heritage (GIS)</li>
+						</ul>
+					</section>
+				</section>
+
 
 				<!-- Introduction -->
 				<section>
@@ -49,17 +64,25 @@
 						</ul>
 					</section>
 					<section>
+						<p class="s-title">3 Blocks of Lab Sessions</p>
+						<ul>
+							<li>B1: Image Processing and 3D Reconstruction </li>
+							<li>B2: GIS and Databases</li>
+							<li>B3: Advanced Image Processing and AI</li>
+						</ul>
+					</section>
+					<section>
 						<p class="s-title">About me</p>
 						<ul>
 							<li>Researcher at DAIS for Computer Vision and 3D Reconstruction</li>
-							<li>Reach out via mail or come to the Zeta building</li>
+							<li>Reach out via mail or come to the Alfa building</li>
 							<li>Passionate about open source software</li>
 						</ul>
 					</section>
 					<section>
 						<p class="s-title">Open Source Software (OSS)</p>
 						<p>Using open source guarantee freedom of choice and possible customization and empowers community efforts.</p>
-						<a href="https://www.youtube.com/watch?v=Ag1AKIl_2GM">Talk from R. Stallman</a>
+						<a href="https://invidious.tiekoetter.com/watch?v=Ag1AKIl_2GM">Talk from R. Stallman (TedXGeneva 2014)</a>
 					</section>
 				</section>
 
@@ -127,15 +150,20 @@
 						 <td>AI-based framework for experiments</td>
 						 <td><a href="https://teachablemachine.withgoogle.com/train">web-based</a></td>
 					 </tr>
+					 <tr>
+						<td>Hugging Face</td>
+						<td>AI-based framework for experiments</td>
+						<td><a href="https://huggingface.co/spaces">web-based</a></td>
+					</tr>
 					</table>
 				</section>
 
 				<section>
-					<p class='s-title'>The first block</p>
+					<p class='s-title'>The first Block</p>
 					<ol>
 						<li>Today: image processing</li>
-						<li>Friday: 3D reconstruction</li>
-						<li>Tuesday: 3D modelling and visualization</li>
+						<li>2nd Session: 3D reconstruction</li>
+						<li>3rd Session: 3D modelling and visualization</li>
 					</ol>
 				</section>
 
@@ -160,11 +188,14 @@
 						<p>what does it mean?</p>
 					</section>
 					<section>
-						<p class="s-title">Quick check</p>
+						<p class="s-title">Let's compress something</p>
+						<p>Is it easier to compress the sequence <strong>012012012</strong> or the sequence <strong>012345678</strong>?</p>
+					</section>
+					<section>
+						<p class="s-title">Background check</p>
 						<ol>
-							<li>can you make an example of a compression algorithm?</li>
-							<li>when is compression lossless?</li>
-							<li>what is the resolution of an image?</li>
+							<li>what does it mean that the compression is lossless?</li>
+							<li>what is the resolution of an image? (and how it relates to compression?)</li>
 						</ol>
 					</section>
 					<section>
@@ -191,14 +222,16 @@
 					<section>
 						<p class="s-title">Another example</p>
 						<table class="center">
-							<tr>
-								<td><img src='imgs/compression/mascareta/jpeg_30.JPG' width=100%/></td>
-								<td><img src='imgs/compression/mascareta/original.JPG' width=95%/></td>
-							</tr>
-							<tr class="fragment">
-								<td> <p class="center large">size: 1.0 MB</p> </td>
-								<td> <p class="center large">size: 13.0 MB</p> </td>
-							</tr>
+							<th>
+								<tr>
+									<td><img src='imgs/compression/mascareta/jpeg_30.JPG' width=100%/></td>
+									<td><img src='imgs/compression/mascareta/original.JPG' width=95%/></td>
+								</tr>
+								<tr class="fragment">
+									<td> <p class="center large">size: 1.0 MB</p> </td>
+									<td> <p class="center large">size: 13.0 MB</p> </td>
+								</tr>
+							</th>
 						</table>
 					</section>
 					<section>
@@ -206,17 +239,15 @@
 						<img src="imgs/compression/gimp.png">
 					</section>
 					<section>
-						<p class="s-title">Exercise</p>
+						<p class="s-title">Exercise: how much can you compress?</p>
 						<ol>
-							<li>We divide in 3/4 groups, download software (GIMP) and images</li>
+							<li>We divide in groups, download software (GIMP) and images</li>
 							<li>Each group compress the images at their best</li>
-							<li>Images are shown with the original one for a test</li>
-							<li>The group whose images are smaller (in size) wins</li>
+							<li>Images should not be distinguishable!</li>
+							<li>The group whose images are smaller (in size) wins!</li>
 						</ol>
 					</section>
-
         		</section>
-
 
 
 				<!-- stitching block -->
@@ -288,7 +319,7 @@
 					<section>
 						<p class='s-title'>Exercise</p>
 						<ol>
-							<li>We divide in 3/4 groups, download the images</li>
+							<li>We divide in groups, download the images</li>
 							<li>Each group tries to align the images at their best</li>
 							<li>Challenge 1: what is the minimum number of images to obtain full picture?</li>
 							<li>Challenge 2: what is the best number of images?</li>
@@ -337,7 +368,7 @@
 					</section>
 				</section>
 
-				<section>
+				<!-- <section>
 					<section>
 						<p class="s-title">Bonus: open hyperspectral images</p>
 					</section>
@@ -345,7 +376,7 @@
 						<p class="s-title">Import from ImageJ</p>
 						<img src="imgs/hsi/hsi.jpg" height="400px">
 					</section>
-				</section>
+				</section> -->
 
 
 				<section>
@@ -393,7 +424,7 @@
 						<p class="s-title">Compression for 3D data?</p>
 					</section>
 					<section>
-						<p class="s-title">For Friday</p>
+						<p class="s-title">For the 2nd Session</p>
 						<p>We will work on 3D Reconstruction</p>
 						<p>Please install <a href="https://alicevision.org/#meshroom">Meshroom</a></p>
 					</section>
