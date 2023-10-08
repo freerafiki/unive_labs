@@ -3,8 +3,8 @@
         <!-- for gitbook -->
         <title>3D Scene Modelling Lab</title>
         <meta charset="UTF-8">
-        <meta name="description" content="3D Modelling with Blender and Meshlab">
-        <meta name="keywords" content="3D scene, blender, meshlab, open source">
+        <meta name="description" content="3D Modelling with Blender">
+        <meta name="keywords" content="3D scene, blender, open source">
         <meta name="author" content="Luca Palmieri">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="../res/icon/dl-icon.png">
@@ -91,61 +91,119 @@
 							</tr>
 						</table>
 					</section>
-				</section>
-
-				<!-- MESHLAB -->
-				<section>
 					<section>
-						<p class="s-title">Meshlab</p>
+						<p class="s-title">We will use mostly:</p>
+						<table class="large">
+							<tr class="bold">
+								<td>.PLY </td>
+								<td>.OBJ</td>
+								<td>.BLEND</td>
+							</tr>
+							<tr class="">
+								<td>only point clouds </td>
+								<td>meshes with texture</td>
+								<td>blender scenes</td>
+							</tr>
+						</table>
 					</section>
 					<section>
-						<p class="s-title">Visualizing Points and Triangles</p>
-						<img src="imgs/3D/meshlab_vis.jpg">
-					</section>
-					<section>
-						<p class="s-title">Simplification</p>
-						<img src="imgs/3D/simplification.jpg">
-					</section>
-				</section>
-
-				<!-- SKETCHFAB -->
-				<section>
-					<section>
-						<p class="s-title">3D Scene</p>
-						<p>Composition of 3D assets</p>
-					</section>
-					<section>
-						<p class="s-title">3D Assets</p>
-						<p>Scanning multiple objects</p>
-						<p>Most of the assets can be found online</p>
-					</section>
-					<section>
-						<p class="s-title">3D models</p>
-						<img src="imgs/3D/sketchfab.jpg">
+						<p class="s-title">Our 3D scan</p>
+						<ul>
+							<li>The mesh (geometry) as .obj file</li>
+							<li>The material (components) as .mtl file</li>
+							<li>The texture (colors) as .png file</li>
+						</ul>
 					</section>
 				</section>
 
+				<!-- BLENDER -->
 				<!-- BLENDER -->
 				<section>
 					<section>
 						<p class="s-title">Blender</p>
 						<p>3D software for modelling, rendering and animating a scene</p>
-					</section>
-					<section>
-						<p class="s-title">Interface</p>
 						<img src="imgs/blender/blender.jpg">
 					</section>
+					<!-- Interface -->
 					<section>
-						<p class="s-title">Camera and Lights</p>
-						<img src="imgs/blender/camera_light.jpg">
+						<p class="s-title">Interface</p>
+						<img src="imgs/blender/interface.jpg">
 					</section>
+					<!-- I/O -->
 					<section>
 						<p class="s-title">Importing</p>
-						<img width=500px src="imgs/blender/import.jpg">
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/import.jpg"></td>
+								<td><img src="imgs/blender/import_obj.jpg"></td>
+							</tr>
+						</table>
 					</section>
 					<section>
 						<p class="s-title"><a href="https://github.com/sketchfab/blender-plugin/releases/tag/1.5.0">Sketchfab Add-on</a></p>
 						<img width=150px src="imgs/blender/import_sketchfab.jpg">
+					</section>
+					<section>
+						<p class="s-title">Exporting</p>
+						<img width=500px src="imgs/blender/export.jpg">
+					</section>
+					<!-- bisecting -->
+					<section>
+						<p class="s-title">Object and Edit Mode</p>
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/shell_basic.jpg"></td>
+								<td><img src="imgs/blender/shell_edit.jpg"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Cutting unwanted parts</p>
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/shell_basic.jpg"></td>
+								<td><img src="imgs/blender/bisect.jpg"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Cutting unwanted parts</p>
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/prepared_shell.jpg"></td>
+								<td><img src="imgs/blender/gizmo.jpg"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Visualization Modes</p>
+						<img width=500px src="imgs/blender/3vis_modes.jpg">
+					</section>
+					<!-- exercise: decimate -->
+					<section>
+						<p class="s-title">Decimate with a Modifier</p>
+						<img width=500px src="imgs/blender/decimate_big.jpg">
+					</section>
+					
+					<!-- rendering -->
+					<section>
+						<p class="s-title">Camera and Placement</p>
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/camera_view.jpg"></td>
+								<td><img src="imgs/blender/scaling.jpg"></td>
+								<td><img src="imgs/blender/shell_on_sand.jpg"></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<p class="s-title">Rendering with lights</p>
+						<table class="large">
+							<tr class="bold">
+								<td><img src="imgs/blender/rendered.jpg"></td>
+								<td><img src="imgs/blender/rendered_eevee_shadow.jpg"></td>
+							</tr>
+						</table>
 					</section>
 					<section>
 						<p class="s-title">Blender Cheat-Sheet</p>
@@ -176,11 +234,43 @@
 							</tr>
 						</table>
 					</section>
+					
+				</section>
+				
+
+				<!-- meshlab
+				<section>
 					<section>
-						<p class="s-title">Exporting</p>
-						<img width=500px src="imgs/blender/export.jpg">
+						<p class="s-title">Meshlab</p>
+					</section>
+					<section>
+						<p class="s-title">Visualizing Points and Triangles</p>
+						<img src="imgs/3D/meshlab_vis.jpg">
+					</section>
+					<section>
+						<p class="s-title">Simplification</p>
+						<img src="imgs/3D/simplification.jpg">
+					</section>
+				</section> -->
+
+				<!-- SKETCHFAB -->
+				<section>
+					<section>
+						<p class="s-title">3D Scene</p>
+						<p>Composition of 3D assets</p>
+					</section>
+					<section>
+						<p class="s-title">3D Assets</p>
+						<p>Scanning multiple objects</p>
+						<p>Most of the assets can be found online</p>
+					</section>
+					<section>
+						<p class="s-title">3D models</p>
+						<img src="imgs/3D/sketchfab.jpg">
 					</section>
 				</section>
+
+				
 
 				<!-- Visualization -->
 				<section>
@@ -245,7 +335,8 @@
 					</section>
 					<section>
 						<p class="s-title">Google Cardboard</p>
-						<img src="https://arvr.google.com/cardboard/images/parallax-devices/viewer1.png">
+						<img src="https://arvr.google.com/cardboard/images/parallax-devices/viewer1.png"/>
+						<br>
 						<a href="https://arvr.google.com/cardboard/get-cardboard/">Get a cardboard</a>
 					</section>
 					<section>
@@ -262,36 +353,22 @@
 					</section>
 				</section>
 
-				<!-- 2d rendering  -->
-				<section>
-					<section>
-						<p class="s-title">2D Rendering from a 3D Model</p>
-					</section>
-					<section>
-						<img src="imgs/blender/render2d.jpg">
-					</section>
-				</section>
-
-				<!-- animations  -->
-				<section>
-					<section>
-						<p class="s-title">Rendering Animations</p>
-					</section>
-					<section>
-						<img src="imgs/blender/timeline.jpg">
-					</section>
-				</section>
-
-
 				<!-- FOR NEXT TIME -->
 				<section>
 					<section>
-						<p class="s-title">For the next time</p>
+						<p class="s-title">Overview of the first block</p>
 						<ul>
-							<li>install <a href="https://www.blender.org/">Blender</a> for 3D modelling</li>
-							<li>create an account on <a href="https://sketchfab.com">Sketchfab</a></li>
-							<li>choose one object and one scene, either yours or from sketchfab</li>
+							<li>3D reconstruction of an object through photogrammetry</li>
+							<li>Manipulation of 3D data</li>
+							<li>Creation of a scene and rendering</li>
 						</ul>
+					</section>
+					<section>
+						<p class="s-title">Possible Project!</p>
+						<p>
+							This can be a possible project for the course, you just need an idea or hypothesis and a story behind it.
+							Feel free to ask and we can discuss details about it.
+						</p>
 					</section>
 				</section>
 			</div>
